@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ShopApp() {
-
+var screen by remember { mutableStateOf("home") }
     Column(
         modifier = Modifier
             .fillMaxSize()
