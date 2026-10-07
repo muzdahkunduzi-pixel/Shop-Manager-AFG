@@ -1,5 +1,5 @@
 package com.shopmanager.afg
-
+import androidx.compose.runtime.*
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,7 +55,7 @@ fun ShopApp() {
         Spacer(modifier = Modifier.height(30.dp))
 
         Button(
-            onClick = {},
+            onClick = { screen = "add" }
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("➕ نوی جنس اضافه کړه")
